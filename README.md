@@ -1,5 +1,7 @@
 # Human Kidney and Urinary System — Interactive 3D Learning Lab
 
+**Live:** https://kidney-anatomy-lab.vercel.app
+
 A realistic, interactive 3D urinary system for secondary-school and first-year biology:
 
 - **Real look.** A shiny capsule over the red-brown kidney; cut open, a paler cortex, darker striped pyramids, and pale calyces and pelvis; pale ureters, a pink-tan bladder, yellow adrenal glands, red arteries, blue-purple veins, ivory bone. "Colour" switches to **Layers** to give each layer its own colour.
@@ -54,6 +56,10 @@ node tools/validate-assets.mjs
 ```
 
 Both steps are deterministic, and every input and the output are hashed in `src/kidney/generated/provenance.json`, with the BodyParts3D fits, the measurements and the routes.
+
+## Deploy
+
+The site is a Vercel project (Vite preset, output `dist/`) for [github.com/Niyaz-05/kidney-anatomy-lab](https://github.com/Niyaz-05/kidney-anatomy-lab), deployed with `vercel deploy --prod` to https://kidney-anatomy-lab.vercel.app.
 
 ## Layout
 

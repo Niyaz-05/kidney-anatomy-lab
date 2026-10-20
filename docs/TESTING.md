@@ -49,6 +49,7 @@ Results recorded on 2026-10-20 on Windows 11, Node 22.14.0. Browser tests ran in
 | Determinism | **Pass**: re-extraction gives the same unbaked model (`7833b5dc51ab…`) and re-baking the recorded final sha256 (`f6856c6b94bd…`) |
 | `npm run build` | **Pass**. Vite warns about chunk size |
 | `npm run e2e` | **Pass**: 23/23. The first full run passed 18 and failed 5. Four failures came from the structure list naming a part twice (inside its group and on its own) and one from a wrong expected stage in the test; after the fixes those five, and the three list-related tests, were run again and passed |
+| Live site (2026-10-20) | **Pass**: https://kidney-anatomy-lab.vercel.app returns the page; `models/kidney.glb` is served with the recorded sha256 `f6856c6b94bd…`; every mode opens in Chrome 155 with no console errors, at 60–61 fps |
 | GPU check (Chrome 155, AMD Radeon, D3D11) | Every mode renders with no console errors. Ready in 11.3 s. Frame rates: 59–61 fps in every mode |
 
 ## Defects found and fixed during QA
