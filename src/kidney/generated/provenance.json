@@ -1,0 +1,1050 @@
+{
+  "output": {
+    "file": "public/models/kidney.glb",
+    "bytes": 4657840,
+    "sha256": "f6856c6b94bd1000ee1d4f606f1eb38483043f50fd9a770088c5b8224bf12b0a",
+    "triangles": 224315,
+    "sourceTriangles": 229906
+  },
+  "sources": {
+    "united": {
+      "name": "3D Reference Organ Set for Female v1.5 (HuBMAP HRA united female), as converted by Female Atlas",
+      "creators": "Kristen Browne, Heidi Schlehlein",
+      "doi": "https://doi.org/10.48539/HBM352.BTSQ.586",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/female-atlas, commit 4c2dfcca02739b59827601915128ee64abdff2ea",
+      "atlasJsonSha256": "5fec63b2ebcb76ecd9c33027ed725e8ec0a7a76b756f72681285410072ae5c51",
+      "chunkSha256": {
+        "female-8.bin": "059405eeb4951a5a64f4593da3c6a460b7adf8c45dc207341bf5eb496668bafc",
+        "female-7.bin": "8ce85965a15c7574df239d48f23c10a33a8e1a8b208eec3d8ea08cfdebbfc889",
+        "female-5.bin": "ee9b75cb2f9bddacc581ae7a57dd2fce8500aceab5b91916a826c6ba7aec5e81",
+        "female-6.bin": "e9d9b27b52799f9ce155f666a93f2150c6822e9dc6669ab87f4d3a2df1eae9f0",
+        "female-4.bin": "5f2906d7ebff3d3b0cb6ba57977cdc9704b9ea96c9aa7fcf56bef35f48213ae6"
+      },
+      "transformReversed": "y - 0.794760942 m"
+    },
+    "bodyparts3d": {
+      "name": "BodyParts3D 4.0 (Database Center for Life Science), via the Human Atlas build",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/human-atlas, commit 76f069640f2c3dd40a58d1556896ac25008f592e",
+      "atlasJsonSha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+      "chunkSha256": {
+        "body-11.bin": "e8c1afe7f30fe710ad164ec9cd2287a32881606e7eb590af47d76b3f84405027",
+        "body-12.bin": "61a6c8da89bb20df50c575964ac81aa4090eabfc2cb27ad2155aea325f31c6c0",
+        "body-13.bin": "4c51b6be85d5b705d2b52b79b9ad1cdae0b65ad03c9402a2f2673c7633fd94f3",
+        "body-14.bin": "58604526a0cd9e7dca4d8587cd9a42f9dd03ec6c4ebbc22a9bf017b31246f7e7",
+        "body-7.bin": "06340f48478eb989cec117a558290c0cd54eeead9641b565cbb8aab255b4e56b",
+        "body-1.bin": "aa077a4675f0d0dd3c9b0af39dc8cf6bcb348c3bf7d283478d4206ce30a5a0de"
+      },
+      "parts": {
+        "segmental-arteries-left": [
+          "FJ3458 Anterior division of left renal artery",
+          "FJ3459 Anterior division of left renal artery",
+          "FJ3460 Anterior division of left renal artery",
+          "FJ3461 Anterior division of left renal artery",
+          "FJ3462 Anterior division of left renal artery",
+          "FJ3463 Anterior division of left renal artery",
+          "FJ3473 Posterior division of left renal artery",
+          "FJ3474 Posterior division of left renal artery",
+          "FJ3475 Posterior division of left renal artery",
+          "FJ2049 Inferior segmental branch of left renal artery",
+          "FJ2052 Superior segmental branch of left renal artery",
+          "FJ2053 Posterior segmental branch of left renal artery",
+          "FJ2054 Posterior segmental branch of left renal artery"
+        ],
+        "segmental-arteries-right": [
+          "FJ3558 Anterior division of right renal artery",
+          "FJ3559 Anterior division of right renal artery",
+          "FJ3560 Anterior division of right renal artery",
+          "FJ3561 Anterior division of right renal artery",
+          "FJ3562 Anterior division of right renal artery",
+          "FJ3563 Anterior division of right renal artery",
+          "FJ3573 Posterior division of right renal artery",
+          "FJ3574 Posterior division of right renal artery",
+          "FJ3575 Posterior division of right renal artery",
+          "FJ2042 Superior segmental branch of right renal artery",
+          "FJ2043 Inferior segmental branch of right renal artery",
+          "FJ2045 Posterior segmental branch of right renal artery"
+        ],
+        "adrenal-gland-left": [
+          "FJ3129 Left adrenal gland"
+        ],
+        "adrenal-gland-right": [
+          "FJ3130 Right adrenal gland"
+        ],
+        "suprarenal-arteries-left": [
+          "FJ3467 Left inferior suprarenal artery",
+          "FJ3472 Left middle suprarenal artery"
+        ],
+        "suprarenal-arteries-right": [
+          "FJ3584 Right inferior suprarenal artery",
+          "FJ3586 Right middle suprarenal artery"
+        ],
+        "suprarenal-vein-left": [
+          "FJ3480 Left suprarenal vein"
+        ],
+        "suprarenal-vein-right": [
+          "FJ3580 Right suprarenal vein"
+        ],
+        "rib-11-left": [
+          "FJ3226 Left eleventh rib"
+        ],
+        "rib-12-left": [
+          "FJ3227 Left twelfth rib"
+        ],
+        "rib-11-right": [
+          "FJ3331 Right eleventh rib"
+        ],
+        "rib-12-right": [
+          "FJ3332 Right twelfth rib"
+        ],
+        "psoas-major-left": [
+          "FJ1431M Left psoas major"
+        ],
+        "psoas-major-right": [
+          "FJ1431 Right psoas major"
+        ],
+        "diaphragm": [
+          "FJ3131 Diaphragm"
+        ]
+      },
+      "registration": {
+        "method": "similarity (rotation, uniform scale, shift): Horn quaternion method on landmark centroids; kidney fits refined by ICP onto the HRA kidney capsule",
+        "fits": {
+          "ribs": {
+            "usedFor": [
+              "rib-11-left",
+              "rib-12-left",
+              "rib-11-right",
+              "rib-12-right",
+              "diaphragm"
+            ],
+            "scale": 1.010722,
+            "rotationDeg": 29.196371,
+            "rmsResidualMm": 2.494698,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ3155 Eleventh thoracic vertebra",
+                "mm": 2.375428
+              },
+              {
+                "landmark": "FJ3156 Twelfth thoracic vertebra",
+                "mm": 2.558461
+              },
+              {
+                "landmark": "FJ3157 First lumbar vertebra",
+                "mm": 2.561681
+              },
+              {
+                "landmark": "FJ3159 Second lumbar vertebra",
+                "mm": 2.478603
+              }
+            ]
+          },
+          "spine": {
+            "usedFor": [
+              "psoas-major-left",
+              "psoas-major-right"
+            ],
+            "scale": 1.15331,
+            "rotationDeg": 14.22711,
+            "rmsResidualMm": 7.333824,
+            "surfaceRmsMm": null,
+            "residuals": [
+              {
+                "landmark": "FJ3156 Twelfth thoracic vertebra",
+                "mm": 11.308894
+              },
+              {
+                "landmark": "FJ3157 First lumbar vertebra",
+                "mm": 3.564518
+              },
+              {
+                "landmark": "FJ3159 Second lumbar vertebra",
+                "mm": 8.617303
+              },
+              {
+                "landmark": "FJ3162 Third lumbar vertebra",
+                "mm": 8.643841
+              },
+              {
+                "landmark": "FJ3165 Fourth lumbar vertebra",
+                "mm": 5.850162
+              },
+              {
+                "landmark": "FJ3168 Fifth lumbar vertebra",
+                "mm": 5.359587
+              },
+              {
+                "landmark": "FJ3393 Sacrum",
+                "mm": 4.896379
+              }
+            ]
+          },
+          "kidney-left": {
+            "usedFor": [
+              "segmental-arteries-left",
+              "adrenal-gland-left",
+              "suprarenal-arteries-left",
+              "suprarenal-vein-left"
+            ],
+            "scale": 1.362207,
+            "rotationDeg": 29.687107,
+            "rmsResidualMm": 46.662814,
+            "surfaceRmsMm": 5.369511,
+            "residuals": [
+              {
+                "landmark": "FJ3145 Left kidney",
+                "mm": 3.870319
+              },
+              {
+                "landmark": "FJ3476 Trunk of left renal artery",
+                "mm": 39.720428
+              },
+              {
+                "landmark": "FJ3478 Left renal vein",
+                "mm": 70.282024
+              }
+            ]
+          },
+          "kidney-right": {
+            "usedFor": [
+              "segmental-arteries-right",
+              "adrenal-gland-right",
+              "suprarenal-arteries-right",
+              "suprarenal-vein-right"
+            ],
+            "scale": 1.215526,
+            "rotationDeg": 28.661224,
+            "rmsResidualMm": 26.032052,
+            "surfaceRmsMm": 6.651809,
+            "residuals": [
+              {
+                "landmark": "FJ3147 Right kidney",
+                "mm": 5.897736
+              },
+              {
+                "landmark": "FJ3576 Trunk of right renal artery",
+                "mm": 26.451265
+              },
+              {
+                "landmark": "FJ3578 Right renal vein",
+                "mm": 36.035406
+              }
+            ]
+          }
+        }
+      },
+      "verticesInsideKidneysPct": {
+        "before": {
+          "segmental-arteries-left": 1.247718,
+          "segmental-arteries-right": 0.376266,
+          "adrenal-gland-left": 0,
+          "adrenal-gland-right": 0,
+          "suprarenal-arteries-left": 1.336574,
+          "suprarenal-arteries-right": 1.043025,
+          "suprarenal-vein-left": 0,
+          "suprarenal-vein-right": 0,
+          "rib-11-left": 0,
+          "rib-12-left": 0,
+          "rib-11-right": 0,
+          "rib-12-right": 1.612903,
+          "psoas-major-left": 0,
+          "psoas-major-right": 1.680672,
+          "diaphragm": 0.039777
+        },
+        "after": {
+          "segmental-arteries-left": 1.247718,
+          "segmental-arteries-right": 0.376266,
+          "adrenal-gland-left": 0,
+          "adrenal-gland-right": 0,
+          "suprarenal-arteries-left": 1.336574,
+          "suprarenal-arteries-right": 1.043025,
+          "suprarenal-vein-left": 0,
+          "suprarenal-vein-right": 0,
+          "rib-11-left": 0,
+          "rib-12-left": 0,
+          "rib-11-right": 0,
+          "rib-12-right": 1.612903,
+          "psoas-major-left": 0,
+          "psoas-major-right": 0,
+          "diaphragm": 0
+        }
+      },
+      "trimmedOutsideKidney": {
+        "segmental-arteries-left": {
+          "trianglesBefore": 19628,
+          "trianglesAfter": 5486
+        },
+        "segmental-arteries-right": {
+          "trianglesBefore": 20644,
+          "trianglesAfter": 4058
+        }
+      }
+    },
+    "schematic": {
+      "urethra": "Generated tube, 40 mm long and 6 mm wide (female urethra, Gray's Anatomy), from the lowest point of the HRA bladder neck along the front of the HRA vagina."
+    }
+  },
+  "changesHere": "Selected and merged the source meshes in src/kidney/source/structures.source.json; welded coincident vertices; simplified the large HRA meshes with meshoptimizer within a 0.4 % relative error bound (largest error used: 0.384 %); subdivided and smoothed the small BodyParts3D parts; recomputed smooth normals; placed the BodyParts3D parts onto the HRA body; pushed the adrenal glands, psoas and diaphragm out of the kidneys; cut off the segmental-artery branches that leave the kidney away from its hilum; generated the urethra; translated so the middle of the urinary tract is the origin.",
+  "centreOffsetMetres": [
+    0.00222,
+    0.142705,
+    -0.068486
+  ],
+  "measures": {
+    "urethraLengthMm": 40,
+    "kidneys": {
+      "left": {
+        "lengthMm": 133.721949,
+        "widthMm": 65.535493,
+        "thicknessMm": 62.87082,
+        "volumeMl": 130.738408,
+        "upperPole": "lumbar-vertebra-1",
+        "hilum": "lumbar-vertebra-3",
+        "lowerPole": "lumbar-vertebra-5",
+        "pyramids": 11,
+        "minorCalyces": 10,
+        "majorCalyces": 4
+      },
+      "right": {
+        "lengthMm": 110.700316,
+        "widthMm": 61.900395,
+        "thicknessMm": 57.409382,
+        "volumeMl": 83.813309,
+        "upperPole": "lumbar-vertebra-1",
+        "hilum": "lumbar-vertebra-3",
+        "lowerPole": "lumbar-vertebra-4",
+        "pyramids": 10,
+        "minorCalyces": 10,
+        "majorCalyces": 3
+      }
+    },
+    "rightKidneyHigherByMm": 10.126058,
+    "ureterLengthMm": {
+      "left": 276.396509,
+      "right": 270.306283
+    },
+    "bladder": {
+      "openEdges": 382,
+      "volumeMl": null,
+      "ellipsoidMl": 73.707294,
+      "sizeMm": [
+        51.969619,
+        44.215083,
+        61.686076
+      ]
+    },
+    "lumbarVertebrae": 6,
+    "nephronAnchor": {
+      "side": "left",
+      "pyramid": "VH_F_renal_pyramid_L_e",
+      "papillaTip": [
+        0.07687,
+        0.116288,
+        -0.04258
+      ],
+      "baseCentre": [
+        0.096853,
+        0.10832,
+        -0.032867
+      ],
+      "axis": [
+        0.88381,
+        -0.232382,
+        0.406052
+      ],
+      "heightMm": 28.281407,
+      "cortexThicknessMm": 10.905154
+    }
+  },
+  "orientationChecks": {
+    "leftKidneyOnLeft": true,
+    "rightKidneyOnRight": true,
+    "bladderBelowKidneys": true,
+    "adrenalsAboveKidneys": true,
+    "uretersDescend": true,
+    "aortaLeftOfVenaCava": true,
+    "kidneysBehind": true,
+    "pelvisMedial": true,
+    "narrowPointsInOrder": true,
+    "nephronAnchored": true
+  },
+  "routeGapsMm": {
+    "VH_F_renal_papilla_L_a→VH_F_minor_calyx_L_a": 2.293906,
+    "VH_F_renal_papilla_L_b→VH_F_minor_calyx_L_b": 0.477342,
+    "VH_F_renal_papilla_L_c→VH_F_minor_calyx_L_c": 1.321236,
+    "VH_F_renal_papilla_L_d→VH_F_minor_calyx_L_c": 1.961,
+    "VH_F_renal_papilla_L_e→VH_F_minor_calyx_L_d": 1.835125,
+    "VH_F_renal_papilla_L_f→VH_F_minor_calyx_L_f": 1.019265,
+    "VH_F_renal_papilla_L_g→VH_F_minor_calyx_L_e": 1.302349,
+    "VH_F_renal_papilla_L_h→VH_F_minor_calyx_L_g": 1.661671,
+    "VH_F_renal_papilla_L_i→VH_F_minor_calyx_L_h": 1.157526,
+    "VH_F_renal_papilla_L_j→VH_F_minor_calyx_L_i": 1.298966,
+    "VH_F_renal_papilla_L_k→VH_F_minor_calyx_L_j": 1.747583,
+    "VH_F_renal_papilla_R_a→VH_F_minor_calyx_R_a": 1.100374,
+    "VH_F_renal_papilla_R_b→VH_F_minor_calyx_R_a": 0.987144,
+    "VH_F_renal_papilla_R_c→VH_F_minor_calyx_R_d": 2.176858,
+    "VH_F_renal_papilla_R_d→VH_F_minor_calyx_R_c": 1.207045,
+    "VH_F_renal_papilla_R_e→VH_F_minor_calyx_R_f": 1.487611,
+    "VH_F_renal_papilla_R_f→VH_F_minor_calyx_R_e": 1.661567,
+    "VH_F_renal_papilla_R_g→VH_F_minor_calyx_R_g": 0.381392,
+    "VH_F_renal_papilla_R_h→VH_F_minor_calyx_R_i": 1.607989,
+    "VH_F_renal_papilla_R_i→VH_F_minor_calyx_R_h": 0.960844,
+    "VH_F_renal_papilla_R_j→VH_F_minor_calyx_R_j": 1.63946,
+    "renal-artery-left→aorta": 0.000012,
+    "renal-vein-left→ivc": 0.020924,
+    "renal-artery-right→aorta": 0.00019,
+    "renal-vein-right→ivc": 0.018975
+  },
+  "structures": [
+    {
+      "id": "kidney-capsule-left",
+      "united": [
+        "VH_F_kidney_capsule_L"
+      ]
+    },
+    {
+      "id": "renal-cortex-left",
+      "united": [
+        "VH_F_outer_cortex_of_kidney_L"
+      ]
+    },
+    {
+      "id": "renal-columns-left",
+      "united": [
+        "VH_F_renal_column_L"
+      ]
+    },
+    {
+      "id": "renal-pyramids-left",
+      "united": [
+        "VH_F_renal_pyramid_L_a",
+        "VH_F_renal_pyramid_L_b",
+        "VH_F_renal_pyramid_L_c",
+        "VH_F_renal_pyramid_L_d",
+        "VH_F_renal_pyramid_L_e",
+        "VH_F_renal_pyramid_L_f",
+        "VH_F_renal_pyramid_L_g",
+        "VH_F_renal_pyramid_L_h",
+        "VH_F_renal_pyramid_L_i",
+        "VH_F_renal_pyramid_L_j",
+        "VH_F_renal_pyramid_L_k"
+      ]
+    },
+    {
+      "id": "renal-papillae-left",
+      "united": [
+        "VH_F_renal_papilla_L_a",
+        "VH_F_renal_papilla_L_b",
+        "VH_F_renal_papilla_L_c",
+        "VH_F_renal_papilla_L_d",
+        "VH_F_renal_papilla_L_e",
+        "VH_F_renal_papilla_L_f",
+        "VH_F_renal_papilla_L_g",
+        "VH_F_renal_papilla_L_h",
+        "VH_F_renal_papilla_L_i",
+        "VH_F_renal_papilla_L_j",
+        "VH_F_renal_papilla_L_k"
+      ]
+    },
+    {
+      "id": "minor-calyces-left",
+      "united": [
+        "VH_F_minor_calyx_L_a",
+        "VH_F_minor_calyx_L_b",
+        "VH_F_minor_calyx_L_c",
+        "VH_F_minor_calyx_L_d",
+        "VH_F_minor_calyx_L_e",
+        "VH_F_minor_calyx_L_f",
+        "VH_F_minor_calyx_L_g",
+        "VH_F_minor_calyx_L_h",
+        "VH_F_minor_calyx_L_i",
+        "VH_F_minor_calyx_L_j"
+      ]
+    },
+    {
+      "id": "major-calyces-left",
+      "united": [
+        "VH_F_major_calyx_L_a",
+        "VH_F_major_calyx_L_b",
+        "VH_F_major_calyx_L_c",
+        "VH_F_major_calyx_L_d"
+      ]
+    },
+    {
+      "id": "renal-pelvis-left",
+      "united": [
+        "VH_F_renal_pelvis_L"
+      ]
+    },
+    {
+      "id": "renal-sinus-left",
+      "united": [
+        "VH_F_hilum_of_kidney_L"
+      ]
+    },
+    {
+      "id": "ureter-left",
+      "united": [
+        "VH_F_left_ureter"
+      ]
+    },
+    {
+      "id": "kidney-capsule-right",
+      "united": [
+        "VH_F_kidney_capsule_R"
+      ]
+    },
+    {
+      "id": "renal-cortex-right",
+      "united": [
+        "VH_F_outer_cortex_of_kidney_R"
+      ]
+    },
+    {
+      "id": "renal-columns-right",
+      "united": [
+        "VH_F_renal_column_R"
+      ]
+    },
+    {
+      "id": "renal-pyramids-right",
+      "united": [
+        "VH_F_renal_pyramid_R_a",
+        "VH_F_renal_pyramid_R_b",
+        "VH_F_renal_pyramid_R_c",
+        "VH_F_renal_pyramid_R_d",
+        "VH_F_renal_pyramid_R_e",
+        "VH_F_renal_pyramid_R_f",
+        "VH_F_renal_pyramid_R_g",
+        "VH_F_renal_pyramid_R_h",
+        "VH_F_renal_pyramid_R_i",
+        "VH_F_renal_pyramid_R_j"
+      ]
+    },
+    {
+      "id": "renal-papillae-right",
+      "united": [
+        "VH_F_renal_papilla_R_a",
+        "VH_F_renal_papilla_R_b",
+        "VH_F_renal_papilla_R_c",
+        "VH_F_renal_papilla_R_d",
+        "VH_F_renal_papilla_R_e",
+        "VH_F_renal_papilla_R_f",
+        "VH_F_renal_papilla_R_g",
+        "VH_F_renal_papilla_R_h",
+        "VH_F_renal_papilla_R_i",
+        "VH_F_renal_papilla_R_j"
+      ]
+    },
+    {
+      "id": "minor-calyces-right",
+      "united": [
+        "VH_F_minor_calyx_R_a",
+        "VH_F_minor_calyx_R_b",
+        "VH_F_minor_calyx_R_c",
+        "VH_F_minor_calyx_R_d",
+        "VH_F_minor_calyx_R_e",
+        "VH_F_minor_calyx_R_f",
+        "VH_F_minor_calyx_R_g",
+        "VH_F_minor_calyx_R_h",
+        "VH_F_minor_calyx_R_i",
+        "VH_F_minor_calyx_R_j"
+      ]
+    },
+    {
+      "id": "major-calyces-right",
+      "united": [
+        "VH_F_major_calyx_R_a",
+        "VH_F_major_calyx_R_b",
+        "VH_F_major_calyx_R_c"
+      ]
+    },
+    {
+      "id": "renal-pelvis-right",
+      "united": [
+        "VH_F_renal_pelvis_R"
+      ]
+    },
+    {
+      "id": "renal-sinus-right",
+      "united": [
+        "VH_F_hilum_of_kidney_R"
+      ]
+    },
+    {
+      "id": "ureter-right",
+      "united": [
+        "VH_F_right_ureter"
+      ]
+    },
+    {
+      "id": "bladder-dome",
+      "united": [
+        "VH_F_fundus_of_urinary_bladder_dome"
+      ]
+    },
+    {
+      "id": "bladder-base",
+      "united": [
+        "VH_F_fundus_of_urinary_bladder_base"
+      ]
+    },
+    {
+      "id": "trigone",
+      "united": [
+        "VH_F_trigone_of_urinary_bladder"
+      ]
+    },
+    {
+      "id": "bladder-neck",
+      "united": [
+        "VH_F_urinary_bladder_neck_smooth_muscle"
+      ]
+    },
+    {
+      "id": "ureteral-orifice-left",
+      "united": [
+        "VH_F_ureteral_orifice_L"
+      ]
+    },
+    {
+      "id": "ureteral-orifice-right",
+      "united": [
+        "VH_F_ureteral_orifice_R"
+      ]
+    },
+    {
+      "id": "urethra",
+      "schematic": "urethra"
+    },
+    {
+      "id": "aorta",
+      "united": [
+        "VH_F_descending_aorta_b"
+      ]
+    },
+    {
+      "id": "inferior-vena-cava",
+      "united": [
+        "VH_F_inferior_vena_cava_b"
+      ]
+    },
+    {
+      "id": "renal-artery-left",
+      "united": [
+        "VH_F_left_renal_artery"
+      ]
+    },
+    {
+      "id": "renal-artery-right",
+      "united": [
+        "VH_F_right_renal_artery"
+      ]
+    },
+    {
+      "id": "renal-vein-left",
+      "united": [
+        "VH_F_left_renal_vein"
+      ]
+    },
+    {
+      "id": "renal-vein-right",
+      "united": [
+        "VH_F_right_renal_vein"
+      ]
+    },
+    {
+      "id": "segmental-arteries-left",
+      "bp3d": [
+        "FJ3458",
+        "FJ3459",
+        "FJ3460",
+        "FJ3461",
+        "FJ3462",
+        "FJ3463",
+        "FJ3473",
+        "FJ3474",
+        "FJ3475",
+        "FJ2049",
+        "FJ2052",
+        "FJ2053",
+        "FJ2054"
+      ]
+    },
+    {
+      "id": "segmental-arteries-right",
+      "bp3d": [
+        "FJ3558",
+        "FJ3559",
+        "FJ3560",
+        "FJ3561",
+        "FJ3562",
+        "FJ3563",
+        "FJ3573",
+        "FJ3574",
+        "FJ3575",
+        "FJ2042",
+        "FJ2043",
+        "FJ2045"
+      ]
+    },
+    {
+      "id": "adrenal-gland-left",
+      "bp3d": [
+        "FJ3129"
+      ]
+    },
+    {
+      "id": "adrenal-gland-right",
+      "bp3d": [
+        "FJ3130"
+      ]
+    },
+    {
+      "id": "suprarenal-arteries-left",
+      "bp3d": [
+        "FJ3467",
+        "FJ3472"
+      ]
+    },
+    {
+      "id": "suprarenal-arteries-right",
+      "bp3d": [
+        "FJ3584",
+        "FJ3586"
+      ]
+    },
+    {
+      "id": "suprarenal-vein-left",
+      "bp3d": [
+        "FJ3480"
+      ]
+    },
+    {
+      "id": "suprarenal-vein-right",
+      "bp3d": [
+        "FJ3580"
+      ]
+    },
+    {
+      "id": "common-iliac-vein-left",
+      "united": [
+        "VH_F_left_common_iliac_vein"
+      ]
+    },
+    {
+      "id": "common-iliac-vein-right",
+      "united": [
+        "VH_F_right_common_iliac_vein"
+      ]
+    },
+    {
+      "id": "thoracic-vertebra-11",
+      "united": [
+        "VH_F_thoracic_vertebra_11"
+      ]
+    },
+    {
+      "id": "thoracic-vertebra-12",
+      "united": [
+        "VH_F_thoracic_vertebra_12"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-1",
+      "united": [
+        "VH_F_lumbar_vertebra_1"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-2",
+      "united": [
+        "VH_F_lumbar_vertebra_2"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-3",
+      "united": [
+        "VH_F_lumbar_vertebra_3"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-4",
+      "united": [
+        "VH_F_lumbar_vertebra_4"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-5",
+      "united": [
+        "VH_F_lumbar_vertebra_5"
+      ]
+    },
+    {
+      "id": "lumbar-vertebra-6",
+      "united": [
+        "VH_F_lumbar_vertebra_6"
+      ]
+    },
+    {
+      "id": "sacrum",
+      "united": [
+        "VH_F_sacrum"
+      ]
+    },
+    {
+      "id": "ilium-left",
+      "united": [
+        "VH_F_ilium_compact_bone_L"
+      ]
+    },
+    {
+      "id": "ilium-right",
+      "united": [
+        "VH_F_ilium_compact_bone_R"
+      ]
+    },
+    {
+      "id": "rib-11-left",
+      "bp3d": [
+        "FJ3226"
+      ]
+    },
+    {
+      "id": "rib-12-left",
+      "bp3d": [
+        "FJ3227"
+      ]
+    },
+    {
+      "id": "rib-11-right",
+      "bp3d": [
+        "FJ3331"
+      ]
+    },
+    {
+      "id": "rib-12-right",
+      "bp3d": [
+        "FJ3332"
+      ]
+    },
+    {
+      "id": "psoas-major-left",
+      "bp3d": [
+        "FJ1431M"
+      ]
+    },
+    {
+      "id": "psoas-major-right",
+      "bp3d": [
+        "FJ1431"
+      ]
+    },
+    {
+      "id": "diaphragm",
+      "bp3d": [
+        "FJ3131"
+      ]
+    },
+    {
+      "id": "liver",
+      "united": [
+        "VH_F_capsule_of_the_liver"
+      ]
+    },
+    {
+      "id": "spleen",
+      "united": [
+        "VH_F_gastric_surface_of_spleen",
+        "VH_F_diaphragmatic_surface_of_spleen",
+        "VH_F_colic_surface_of_spleen",
+        "VH_F_hilum_of_spleen",
+        "VH_F_renal_surface_of_spleen"
+      ]
+    },
+    {
+      "id": "pancreas",
+      "united": [
+        "VH_F_head_of_pancreas",
+        "VH_F_neck_of_pancreas",
+        "VH_F_body_of_pancreas",
+        "VH_F_tail_of_pancreas"
+      ]
+    },
+    {
+      "id": "duodenum",
+      "united": [
+        "VH_F_duodenum_superior",
+        "VH_F_duodenum_descending",
+        "VH_F_duodenum_horizontal",
+        "VH_F_duodenum_ascending"
+      ]
+    },
+    {
+      "id": "ascending-colon",
+      "united": [
+        "VH_F_ascending_colon"
+      ]
+    },
+    {
+      "id": "descending-colon",
+      "united": [
+        "VH_F_descending_colon"
+      ]
+    },
+    {
+      "id": "uterus",
+      "united": [
+        "VH_F_fundus_of_uterus",
+        "VH_F_body_of_uterus",
+        "VH_F_lower_uterine_segment"
+      ]
+    },
+    {
+      "id": "vagina",
+      "united": [
+        "VH_F_vagina"
+      ]
+    }
+  ],
+  "shadingBake": {
+    "tool": "tools/bake-shading.mjs",
+    "config": {
+      "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer, so hiding a layer never leaves dark shadows behind (the kidney's inner layers shade each other; the bones shade only bone).",
+      "model": "public/models/kidney.glb",
+      "provenance": "src/kidney/generated/provenance.json",
+      "aoDistance": 0.012,
+      "rays": 48,
+      "rayOffset": 0.00025,
+      "noiseFrequency": 260,
+      "occluders": {
+        "capsule": [
+          "capsule"
+        ],
+        "cortex": [
+          "cortex",
+          "medulla",
+          "collecting",
+          "sinus"
+        ],
+        "medulla": [
+          "medulla",
+          "cortex",
+          "collecting"
+        ],
+        "collecting": [
+          "collecting",
+          "medulla",
+          "sinus"
+        ],
+        "sinus": [
+          "sinus",
+          "collecting"
+        ],
+        "ureter": [
+          "ureter"
+        ],
+        "bladder": [
+          "bladder"
+        ],
+        "artery": [
+          "artery",
+          "vein"
+        ],
+        "vein": [
+          "vein",
+          "artery"
+        ],
+        "adrenal": [
+          "adrenal"
+        ],
+        "bone": [
+          "bone"
+        ],
+        "muscle": [
+          "muscle"
+        ],
+        "neighbours": [
+          "neighbours"
+        ]
+      },
+      "fat": null
+    },
+    "attribute": "_TISSUE (VEC4 unsigned byte, normalised): r ambient occlusion, g mottling noise, b fat proximity, a unused",
+    "unbakedSha256": "7833b5dc51ab5a4212fcb81bfbe1f0b002ba5ce277414870a51957d82b4cd282",
+    "unbakedOutput": {
+      "bytes": 4183440
+    },
+    "vertices": 116084,
+    "layers": {
+      "capsule": {
+        "meshes": 2,
+        "meanAO": 0.986,
+        "vertices": 3312
+      },
+      "cortex": {
+        "meshes": 4,
+        "meanAO": 0.525,
+        "vertices": 7313
+      },
+      "medulla": {
+        "meshes": 4,
+        "meanAO": 0.511,
+        "vertices": 15695
+      },
+      "collecting": {
+        "meshes": 6,
+        "meanAO": 0.491,
+        "vertices": 16429
+      },
+      "sinus": {
+        "meshes": 2,
+        "meanAO": 0.771,
+        "vertices": 2447
+      },
+      "ureter": {
+        "meshes": 2,
+        "meanAO": 0.999,
+        "vertices": 3071
+      },
+      "bladder": {
+        "meshes": 7,
+        "meanAO": 0.879,
+        "vertices": 5586
+      },
+      "artery": {
+        "meshes": 7,
+        "meanAO": 0.868,
+        "vertices": 12517
+      },
+      "vein": {
+        "meshes": 7,
+        "meanAO": 0.878,
+        "vertices": 4704
+      },
+      "adrenal": {
+        "meshes": 2,
+        "meanAO": 0.997,
+        "vertices": 1525
+      },
+      "bone": {
+        "meshes": 15,
+        "meanAO": 0.891,
+        "vertices": 23256
+      },
+      "muscle": {
+        "meshes": 3,
+        "meanAO": 0.978,
+        "vertices": 8961
+      },
+      "neighbours": {
+        "meshes": 8,
+        "meanAO": 0.908,
+        "vertices": 11268
+      }
+    }
+  }
+}

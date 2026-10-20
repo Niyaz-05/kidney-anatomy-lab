@@ -1,0 +1,61 @@
+{
+  "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer, so hiding a layer never leaves dark shadows behind (the kidney's inner layers shade each other; the bones shade only bone).",
+  "model": "public/models/kidney.glb",
+  "provenance": "src/kidney/generated/provenance.json",
+  "aoDistance": 0.012,
+  "rays": 48,
+  "rayOffset": 0.00025,
+  "noiseFrequency": 260,
+  "occluders": {
+    "capsule": [
+      "capsule"
+    ],
+    "cortex": [
+      "cortex",
+      "medulla",
+      "collecting",
+      "sinus"
+    ],
+    "medulla": [
+      "medulla",
+      "cortex",
+      "collecting"
+    ],
+    "collecting": [
+      "collecting",
+      "medulla",
+      "sinus"
+    ],
+    "sinus": [
+      "sinus",
+      "collecting"
+    ],
+    "ureter": [
+      "ureter"
+    ],
+    "bladder": [
+      "bladder"
+    ],
+    "artery": [
+      "artery",
+      "vein"
+    ],
+    "vein": [
+      "vein",
+      "artery"
+    ],
+    "adrenal": [
+      "adrenal"
+    ],
+    "bone": [
+      "bone"
+    ],
+    "muscle": [
+      "muscle"
+    ],
+    "neighbours": [
+      "neighbours"
+    ]
+  },
+  "fat": null
+}

@@ -1,0 +1,833 @@
+{
+ "$comment": "Kidney-lab structures mapped to source parts. 'united': part id in the HRA united-female v1.5 body as converted by Female Atlas (translated +0.794760942 m in y; reversed here). 'bp3d': BodyParts3D 4.0 part id in the Human Atlas build, placed by a similarity fit (see registration). 'schematic': generated in tools/extract-kidney.mjs (not in any source). 'mould': pushed out of the HRA kidneys after placing. 'trim': branches that leave the HRA kidney away from its hilum are cut off (the two bodies' kidneys differ in shape). Sides are checked by position: +x is the patient's left.",
+ "unitedYShift": 0.794760942,
+ "structures": [
+  {
+   "id": "kidney-capsule-left",
+   "layer": "capsule",
+   "side": "left",
+   "united": [
+    "VH_F_kidney_capsule_L"
+   ]
+  },
+  {
+   "id": "renal-cortex-left",
+   "layer": "cortex",
+   "side": "left",
+   "united": [
+    "VH_F_outer_cortex_of_kidney_L"
+   ]
+  },
+  {
+   "id": "renal-columns-left",
+   "layer": "cortex",
+   "side": "left",
+   "united": [
+    "VH_F_renal_column_L"
+   ]
+  },
+  {
+   "id": "renal-pyramids-left",
+   "layer": "medulla",
+   "side": "left",
+   "united": [
+    "VH_F_renal_pyramid_L_a",
+    "VH_F_renal_pyramid_L_b",
+    "VH_F_renal_pyramid_L_c",
+    "VH_F_renal_pyramid_L_d",
+    "VH_F_renal_pyramid_L_e",
+    "VH_F_renal_pyramid_L_f",
+    "VH_F_renal_pyramid_L_g",
+    "VH_F_renal_pyramid_L_h",
+    "VH_F_renal_pyramid_L_i",
+    "VH_F_renal_pyramid_L_j",
+    "VH_F_renal_pyramid_L_k"
+   ]
+  },
+  {
+   "id": "renal-papillae-left",
+   "layer": "medulla",
+   "side": "left",
+   "united": [
+    "VH_F_renal_papilla_L_a",
+    "VH_F_renal_papilla_L_b",
+    "VH_F_renal_papilla_L_c",
+    "VH_F_renal_papilla_L_d",
+    "VH_F_renal_papilla_L_e",
+    "VH_F_renal_papilla_L_f",
+    "VH_F_renal_papilla_L_g",
+    "VH_F_renal_papilla_L_h",
+    "VH_F_renal_papilla_L_i",
+    "VH_F_renal_papilla_L_j",
+    "VH_F_renal_papilla_L_k"
+   ]
+  },
+  {
+   "id": "minor-calyces-left",
+   "layer": "collecting",
+   "side": "left",
+   "united": [
+    "VH_F_minor_calyx_L_a",
+    "VH_F_minor_calyx_L_b",
+    "VH_F_minor_calyx_L_c",
+    "VH_F_minor_calyx_L_d",
+    "VH_F_minor_calyx_L_e",
+    "VH_F_minor_calyx_L_f",
+    "VH_F_minor_calyx_L_g",
+    "VH_F_minor_calyx_L_h",
+    "VH_F_minor_calyx_L_i",
+    "VH_F_minor_calyx_L_j"
+   ]
+  },
+  {
+   "id": "major-calyces-left",
+   "layer": "collecting",
+   "side": "left",
+   "united": [
+    "VH_F_major_calyx_L_a",
+    "VH_F_major_calyx_L_b",
+    "VH_F_major_calyx_L_c",
+    "VH_F_major_calyx_L_d"
+   ]
+  },
+  {
+   "id": "renal-pelvis-left",
+   "layer": "collecting",
+   "side": "left",
+   "united": [
+    "VH_F_renal_pelvis_L"
+   ]
+  },
+  {
+   "id": "renal-sinus-left",
+   "layer": "sinus",
+   "side": "left",
+   "united": [
+    "VH_F_hilum_of_kidney_L"
+   ]
+  },
+  {
+   "id": "ureter-left",
+   "layer": "ureter",
+   "side": "left",
+   "united": [
+    "VH_F_left_ureter"
+   ]
+  },
+  {
+   "id": "kidney-capsule-right",
+   "layer": "capsule",
+   "side": "right",
+   "united": [
+    "VH_F_kidney_capsule_R"
+   ]
+  },
+  {
+   "id": "renal-cortex-right",
+   "layer": "cortex",
+   "side": "right",
+   "united": [
+    "VH_F_outer_cortex_of_kidney_R"
+   ]
+  },
+  {
+   "id": "renal-columns-right",
+   "layer": "cortex",
+   "side": "right",
+   "united": [
+    "VH_F_renal_column_R"
+   ]
+  },
+  {
+   "id": "renal-pyramids-right",
+   "layer": "medulla",
+   "side": "right",
+   "united": [
+    "VH_F_renal_pyramid_R_a",
+    "VH_F_renal_pyramid_R_b",
+    "VH_F_renal_pyramid_R_c",
+    "VH_F_renal_pyramid_R_d",
+    "VH_F_renal_pyramid_R_e",
+    "VH_F_renal_pyramid_R_f",
+    "VH_F_renal_pyramid_R_g",
+    "VH_F_renal_pyramid_R_h",
+    "VH_F_renal_pyramid_R_i",
+    "VH_F_renal_pyramid_R_j"
+   ]
+  },
+  {
+   "id": "renal-papillae-right",
+   "layer": "medulla",
+   "side": "right",
+   "united": [
+    "VH_F_renal_papilla_R_a",
+    "VH_F_renal_papilla_R_b",
+    "VH_F_renal_papilla_R_c",
+    "VH_F_renal_papilla_R_d",
+    "VH_F_renal_papilla_R_e",
+    "VH_F_renal_papilla_R_f",
+    "VH_F_renal_papilla_R_g",
+    "VH_F_renal_papilla_R_h",
+    "VH_F_renal_papilla_R_i",
+    "VH_F_renal_papilla_R_j"
+   ]
+  },
+  {
+   "id": "minor-calyces-right",
+   "layer": "collecting",
+   "side": "right",
+   "united": [
+    "VH_F_minor_calyx_R_a",
+    "VH_F_minor_calyx_R_b",
+    "VH_F_minor_calyx_R_c",
+    "VH_F_minor_calyx_R_d",
+    "VH_F_minor_calyx_R_e",
+    "VH_F_minor_calyx_R_f",
+    "VH_F_minor_calyx_R_g",
+    "VH_F_minor_calyx_R_h",
+    "VH_F_minor_calyx_R_i",
+    "VH_F_minor_calyx_R_j"
+   ]
+  },
+  {
+   "id": "major-calyces-right",
+   "layer": "collecting",
+   "side": "right",
+   "united": [
+    "VH_F_major_calyx_R_a",
+    "VH_F_major_calyx_R_b",
+    "VH_F_major_calyx_R_c"
+   ]
+  },
+  {
+   "id": "renal-pelvis-right",
+   "layer": "collecting",
+   "side": "right",
+   "united": [
+    "VH_F_renal_pelvis_R"
+   ]
+  },
+  {
+   "id": "renal-sinus-right",
+   "layer": "sinus",
+   "side": "right",
+   "united": [
+    "VH_F_hilum_of_kidney_R"
+   ]
+  },
+  {
+   "id": "ureter-right",
+   "layer": "ureter",
+   "side": "right",
+   "united": [
+    "VH_F_right_ureter"
+   ]
+  },
+  {
+   "id": "bladder-dome",
+   "layer": "bladder",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_fundus_of_urinary_bladder_dome"
+   ]
+  },
+  {
+   "id": "bladder-base",
+   "layer": "bladder",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_fundus_of_urinary_bladder_base"
+   ]
+  },
+  {
+   "id": "trigone",
+   "layer": "bladder",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_trigone_of_urinary_bladder"
+   ]
+  },
+  {
+   "id": "bladder-neck",
+   "layer": "bladder",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_urinary_bladder_neck_smooth_muscle"
+   ]
+  },
+  {
+   "id": "ureteral-orifice-left",
+   "layer": "bladder",
+   "side": "left",
+   "united": [
+    "VH_F_ureteral_orifice_L"
+   ]
+  },
+  {
+   "id": "ureteral-orifice-right",
+   "layer": "bladder",
+   "side": "right",
+   "united": [
+    "VH_F_ureteral_orifice_R"
+   ]
+  },
+  {
+   "id": "urethra",
+   "layer": "bladder",
+   "side": "midline",
+   "sideCheck": false,
+   "schematic": "urethra"
+  },
+  {
+   "id": "aorta",
+   "layer": "artery",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_descending_aorta_b"
+   ]
+  },
+  {
+   "id": "inferior-vena-cava",
+   "layer": "vein",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_inferior_vena_cava_b"
+   ]
+  },
+  {
+   "id": "renal-artery-left",
+   "layer": "artery",
+   "side": "left",
+   "united": [
+    "VH_F_left_renal_artery"
+   ]
+  },
+  {
+   "id": "renal-artery-right",
+   "layer": "artery",
+   "side": "right",
+   "united": [
+    "VH_F_right_renal_artery"
+   ]
+  },
+  {
+   "id": "renal-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "united": [
+    "VH_F_left_renal_vein"
+   ]
+  },
+  {
+   "id": "renal-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "united": [
+    "VH_F_right_renal_vein"
+   ]
+  },
+  {
+   "id": "segmental-arteries-left",
+   "layer": "artery",
+   "side": "left",
+   "fit": "kidney-left",
+   "trim": true,
+   "bp3d": [
+    "FJ3458",
+    "FJ3459",
+    "FJ3460",
+    "FJ3461",
+    "FJ3462",
+    "FJ3463",
+    "FJ3473",
+    "FJ3474",
+    "FJ3475",
+    "FJ2049",
+    "FJ2052",
+    "FJ2053",
+    "FJ2054"
+   ]
+  },
+  {
+   "id": "segmental-arteries-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "kidney-right",
+   "trim": true,
+   "bp3d": [
+    "FJ3558",
+    "FJ3559",
+    "FJ3560",
+    "FJ3561",
+    "FJ3562",
+    "FJ3563",
+    "FJ3573",
+    "FJ3574",
+    "FJ3575",
+    "FJ2042",
+    "FJ2043",
+    "FJ2045"
+   ]
+  },
+  {
+   "id": "adrenal-gland-left",
+   "layer": "adrenal",
+   "side": "left",
+   "fit": "kidney-left",
+   "mould": true,
+   "bp3d": [
+    "FJ3129"
+   ]
+  },
+  {
+   "id": "adrenal-gland-right",
+   "layer": "adrenal",
+   "side": "right",
+   "fit": "kidney-right",
+   "mould": true,
+   "bp3d": [
+    "FJ3130"
+   ]
+  },
+  {
+   "id": "suprarenal-arteries-left",
+   "layer": "artery",
+   "side": "left",
+   "fit": "kidney-left",
+   "bp3d": [
+    "FJ3467",
+    "FJ3472"
+   ]
+  },
+  {
+   "id": "suprarenal-arteries-right",
+   "layer": "artery",
+   "side": "right",
+   "fit": "kidney-right",
+   "bp3d": [
+    "FJ3584",
+    "FJ3586"
+   ]
+  },
+  {
+   "id": "suprarenal-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "fit": "kidney-left",
+   "bp3d": [
+    "FJ3480"
+   ]
+  },
+  {
+   "id": "suprarenal-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "fit": "kidney-right",
+   "bp3d": [
+    "FJ3580"
+   ]
+  },
+  {
+   "id": "common-iliac-vein-left",
+   "layer": "vein",
+   "side": "left",
+   "united": [
+    "VH_F_left_common_iliac_vein"
+   ]
+  },
+  {
+   "id": "common-iliac-vein-right",
+   "layer": "vein",
+   "side": "right",
+   "united": [
+    "VH_F_right_common_iliac_vein"
+   ]
+  },
+  {
+   "id": "thoracic-vertebra-11",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_thoracic_vertebra_11"
+   ]
+  },
+  {
+   "id": "thoracic-vertebra-12",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_thoracic_vertebra_12"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-1",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_1"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-2",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_2"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-3",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_3"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-4",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_4"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-5",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_5"
+   ]
+  },
+  {
+   "id": "lumbar-vertebra-6",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_lumbar_vertebra_6"
+   ]
+  },
+  {
+   "id": "sacrum",
+   "layer": "bone",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_sacrum"
+   ]
+  },
+  {
+   "id": "ilium-left",
+   "layer": "bone",
+   "side": "left",
+   "united": [
+    "VH_F_ilium_compact_bone_L"
+   ]
+  },
+  {
+   "id": "ilium-right",
+   "layer": "bone",
+   "side": "right",
+   "united": [
+    "VH_F_ilium_compact_bone_R"
+   ]
+  },
+  {
+   "id": "rib-11-left",
+   "layer": "bone",
+   "side": "left",
+   "fit": "ribs",
+   "bp3d": [
+    "FJ3226"
+   ]
+  },
+  {
+   "id": "rib-12-left",
+   "layer": "bone",
+   "side": "left",
+   "fit": "ribs",
+   "bp3d": [
+    "FJ3227"
+   ]
+  },
+  {
+   "id": "rib-11-right",
+   "layer": "bone",
+   "side": "right",
+   "fit": "ribs",
+   "bp3d": [
+    "FJ3331"
+   ]
+  },
+  {
+   "id": "rib-12-right",
+   "layer": "bone",
+   "side": "right",
+   "fit": "ribs",
+   "bp3d": [
+    "FJ3332"
+   ]
+  },
+  {
+   "id": "psoas-major-left",
+   "layer": "muscle",
+   "side": "left",
+   "fit": "spine",
+   "mould": true,
+   "bp3d": [
+    "FJ1431M"
+   ]
+  },
+  {
+   "id": "psoas-major-right",
+   "layer": "muscle",
+   "side": "right",
+   "fit": "spine",
+   "mould": true,
+   "bp3d": [
+    "FJ1431"
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "layer": "muscle",
+   "side": "midline",
+   "sideCheck": false,
+   "fit": "ribs",
+   "mould": true,
+   "bp3d": [
+    "FJ3131"
+   ]
+  },
+  {
+   "id": "liver",
+   "layer": "neighbours",
+   "side": "right",
+   "sideCheck": false,
+   "united": [
+    "VH_F_capsule_of_the_liver"
+   ]
+  },
+  {
+   "id": "spleen",
+   "layer": "neighbours",
+   "side": "left",
+   "united": [
+    "VH_F_gastric_surface_of_spleen",
+    "VH_F_diaphragmatic_surface_of_spleen",
+    "VH_F_colic_surface_of_spleen",
+    "VH_F_hilum_of_spleen",
+    "VH_F_renal_surface_of_spleen"
+   ]
+  },
+  {
+   "id": "pancreas",
+   "layer": "neighbours",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_head_of_pancreas",
+    "VH_F_neck_of_pancreas",
+    "VH_F_body_of_pancreas",
+    "VH_F_tail_of_pancreas"
+   ]
+  },
+  {
+   "id": "duodenum",
+   "layer": "neighbours",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_duodenum_superior",
+    "VH_F_duodenum_descending",
+    "VH_F_duodenum_horizontal",
+    "VH_F_duodenum_ascending"
+   ]
+  },
+  {
+   "id": "ascending-colon",
+   "layer": "neighbours",
+   "side": "right",
+   "united": [
+    "VH_F_ascending_colon"
+   ]
+  },
+  {
+   "id": "descending-colon",
+   "layer": "neighbours",
+   "side": "left",
+   "united": [
+    "VH_F_descending_colon"
+   ]
+  },
+  {
+   "id": "uterus",
+   "layer": "neighbours",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_fundus_of_uterus",
+    "VH_F_body_of_uterus",
+    "VH_F_lower_uterine_segment"
+   ]
+  },
+  {
+   "id": "vagina",
+   "layer": "neighbours",
+   "side": "midline",
+   "sideCheck": false,
+   "united": [
+    "VH_F_vagina"
+   ]
+  }
+ ],
+ "registration": {
+  "$comment": "Similarity transforms (rotation, uniform scale, shift). 'ribs' (lower ribs, diaphragm) is fitted on the landmark centroids (Horn's method) of vertebrae T11 to L2; 'spine' (psoas) on T12 to L5 and the sacrum (this body has a sixth lumbar vertebra, which has no BodyParts3D partner). 'kidney-left' / 'kidney-right' start from the renal artery, vein and kidney centroids, then refine by ICP of the BodyParts3D kidney surface onto the HRA kidney capsule, so the segmental arteries and adrenal glands sit on the real kidney.",
+  "fits": {
+   "ribs": {
+    "maxRmsMm": 12,
+    "pairs": [
+     [
+      "FJ3155",
+      [
+       "VH_F_thoracic_vertebra_11"
+      ]
+     ],
+     [
+      "FJ3156",
+      [
+       "VH_F_thoracic_vertebra_12"
+      ]
+     ],
+     [
+      "FJ3157",
+      [
+       "VH_F_lumbar_vertebra_1"
+      ]
+     ],
+     [
+      "FJ3159",
+      [
+       "VH_F_lumbar_vertebra_2"
+      ]
+     ]
+    ]
+   },
+   "spine": {
+    "maxRmsMm": 25,
+    "pairs": [
+     [
+      "FJ3156",
+      [
+       "VH_F_thoracic_vertebra_12"
+      ]
+     ],
+     [
+      "FJ3157",
+      [
+       "VH_F_lumbar_vertebra_1"
+      ]
+     ],
+     [
+      "FJ3159",
+      [
+       "VH_F_lumbar_vertebra_2"
+      ]
+     ],
+     [
+      "FJ3162",
+      [
+       "VH_F_lumbar_vertebra_3"
+      ]
+     ],
+     [
+      "FJ3165",
+      [
+       "VH_F_lumbar_vertebra_4"
+      ]
+     ],
+     [
+      "FJ3168",
+      [
+       "VH_F_lumbar_vertebra_5"
+      ]
+     ],
+     [
+      "FJ3393",
+      [
+       "VH_F_sacrum"
+      ]
+     ]
+    ]
+   },
+   "kidney-left": {
+    "maxRmsMm": 8,
+    "icp": {
+     "bp3d": "FJ3145",
+     "united": "VH_F_kidney_capsule_L"
+    },
+    "pairs": [
+     [
+      "FJ3145",
+      [
+       "VH_F_kidney_capsule_L"
+      ]
+     ],
+     [
+      "FJ3476",
+      [
+       "VH_F_left_renal_artery"
+      ]
+     ],
+     [
+      "FJ3478",
+      [
+       "VH_F_left_renal_vein"
+      ]
+     ]
+    ]
+   },
+   "kidney-right": {
+    "maxRmsMm": 8,
+    "icp": {
+     "bp3d": "FJ3147",
+     "united": "VH_F_kidney_capsule_R"
+    },
+    "pairs": [
+     [
+      "FJ3147",
+      [
+       "VH_F_kidney_capsule_R"
+      ]
+     ],
+     [
+      "FJ3576",
+      [
+       "VH_F_right_renal_artery"
+      ]
+     ],
+     [
+      "FJ3578",
+      [
+       "VH_F_right_renal_vein"
+      ]
+     ]
+    ]
+   }
+  }
+ }
+}
