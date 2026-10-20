@@ -113,9 +113,12 @@ export const TourStep = z.object({
   stoneMm: z.number().min(1).max(15).optional(),
   hormone: HormoneId.optional(),
   hormoneStep: z.number().int().min(0).max(10).optional(),
-  /** Cut the model for this step: axis and position (-1 … 1 across the model). */
-  slice: z.object({ axis: SliceAxis, at: z.number().min(-1).max(1) }).optional(),
+  /** Cut the model for this step: axis and position (-1 … 1 across what the mode shows). Without a
+   * position, a frontal cut runs through the middle of the kidneys and other cuts through the middle. */
+  slice: z.object({ axis: SliceAxis, at: z.number().min(-1).max(1).optional() }).optional(),
   colourBy: z.enum(['real', 'layer']).optional(),
+  /** What the camera frames: the focus structures (default), or the mode's whole view. */
+  frame: z.enum(['focus', 'mode']).optional(),
 });
 export type TourStep = z.infer<typeof TourStep>;
 

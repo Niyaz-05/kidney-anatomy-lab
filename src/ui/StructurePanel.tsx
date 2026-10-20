@@ -1,6 +1,6 @@
 import { useId, useMemo, useState } from 'react';
 import { useLab } from '../app/LabContext';
-import { isVisible, keptHalf, type ColourBy } from '../app/state';
+import { effectiveSlice, isVisible, keptHalf, type ColourBy } from '../app/state';
 import { searchStructures } from '../app/search';
 import type { AnatomicalStructure, SliceAxis } from '../contract/schema';
 import { baseColour } from '../viewer/palette';
@@ -29,15 +29,17 @@ const SLICES: { id: SliceAxis; label: string; hint: string }[] = [
 
 /** The cut control: axis, position and which side to keep. */
 function SliceControl() {
-  const { state, dispatch } = useLab();
+  const { def, state, dispatch } = useLab();
   const id = useId();
-  const s = state.slice;
+  // In a tour the step sets the cut: show it, and leave the controls to the learner's own views.
+  const touring = state.mode === 'tour';
+  const s = effectiveSlice(def, state);
   return (
     <div className="slice" role="group" aria-labelledby={`${id}-t`}>
       <span className="group-title" id={`${id}-t`}>Cut</span>
       <div className="seg-toggle" role="radiogroup" aria-label="Cut direction">
         {SLICES.map((x) => (
-          <button key={x.id} type="button" role="radio" aria-checked={s.axis === x.id} title={x.hint} onClick={() => dispatch({ type: 'set-slice', axis: x.id })}>
+          <button key={x.id} type="button" role="radio" aria-checked={s.axis === x.id} title={x.hint} disabled={touring} onClick={() => dispatch({ type: 'set-slice', axis: x.id })}>
             {x.label}
           </button>
         ))}
@@ -49,14 +51,15 @@ function SliceControl() {
             id={`${id}-at`}
             type="range" min={-1} max={1} step={0.01} value={s.at}
             aria-valuetext={`${Math.round(((s.at + 1) / 2) * 100)} percent across`}
+            disabled={touring}
             onChange={(e) => dispatch({ type: 'set-slice', at: Number(e.target.value) })}
           />
-          <button type="button" className="secondary small-button" aria-pressed={s.flip} onClick={() => dispatch({ type: 'set-slice', flip: !s.flip })} title="Keep the other half">
+          <button type="button" className="secondary small-button" aria-pressed={s.flip} disabled={touring} onClick={() => dispatch({ type: 'set-slice', flip: !s.flip })} title="Keep the other half">
             Flip
           </button>
         </div>
       )}
-      {s.axis !== 'off' && <p className="slice-hint" aria-live="polite">Showing {keptHalf(s)}</p>}
+      {s.axis !== 'off' && <p className="slice-hint" aria-live="polite">Showing {keptHalf(s)}{touring ? ' (set by the tour)' : ''}</p>}
     </div>
   );
 }

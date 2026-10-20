@@ -28,13 +28,15 @@ interface Props {
   labels: boolean;
   /** Hormone view: the part to point out. */
   pointOut?: 'jg-cells' | 'macula-densa' | 'collecting' | 'pct' | 'dct' | 'interstitium' | null;
+  /** The filtering view's close-up of the glomerulus: labels for its own parts. */
+  closeUp?: boolean;
 }
 
 /**
  * The nephron close-up, placed in one real pyramid of the left kidney (see kidney/nephron.ts).
  * Tubes are clickable; the filtrate's particles change colour with its concentration.
  */
-export function NephronView({ segment, onSegment, urineOsm, flowScale, afferent, efferent, playing, reducedMotion, labels, pointOut = null }: Props) {
+export function NephronView({ segment, onSegment, urineOsm, flowScale, afferent, efferent, playing, reducedMotion, labels, pointOut = null, closeUp = false }: Props) {
   const anchor = measures.nephronAnchor;
   const layout = useMemo(() => nephronLayout(anchor.cortexThicknessMm ?? 10, anchor.heightMm), [anchor]);
   const invalidate = useThree((s) => s.invalidate);
@@ -151,6 +153,15 @@ export function NephronView({ segment, onSegment, urineOsm, flowScale, afferent,
     ['Glomerulus', [jm.centre[0] - 0.2e-3, -3.4e-3, 0]], ['Proximal tubule', [0.42 * C, -3.6e-3, 0]], ['Distal tubule', [0.32 * C, 3.6e-3, 0]],
     ['Loop of Henle', [-0.72 * H, -3.0e-3, 0]], ['Collecting duct', [-0.45 * H, 3.4e-3, 0]], ['Cortical nephron', [layout.glomeruli[1]!.centre[0], 3.6e-3, 0]],
   ];
+  // Close up, the labels sit on the glomerulus and its arterioles (positions along the drawn vessels).
+  const along = (id: string, t: number) => { const v = vessels.find((x) => x.id === id); return v ? v.curve.getPointAt(t) : null; };
+  const CLOSE: [string, THREE.Vector3 | null][] = [
+    ['Glomerulus', glomeruli[0]!.at.clone().add(new THREE.Vector3(...nephronFrame().w).multiplyScalar(0.9e-3))],
+    ['Afferent arteriole (in)', along('afferent', 0.65)],
+    ['Efferent arteriole (out)', along('vasa-recta', 0.05)],
+    ['Cortical radiate artery', along('radiate', 0.3)],
+    ['Juxtaglomerular cells', jgAt],
+  ];
   const showLabels = labels || segment === null;
 
   return (
@@ -196,7 +207,8 @@ export function NephronView({ segment, onSegment, urineOsm, flowScale, afferent,
         <meshBasicMaterial color={pointOut === 'macula-densa' ? '#ffffff' : '#a0c8ff'} toneMapped={false} />
       </mesh>
       <instancedMesh ref={mesh} args={[sphere, pmat, COUNT * paths.length]} frustumCulled={false} renderOrder={7} />
-      {showLabels && LABELS.map(([text, at, kind]) => label(text, world(at), text, kind))}
+      {showLabels && !closeUp && LABELS.map(([text, at, kind]) => label(text, world(at), text, kind))}
+      {closeUp && CLOSE.map(([text, at]) => at && label(text, at, text))}
       {pointOut === 'jg-cells' && label('Juxtaglomerular cells', jgAt.clone().add(new THREE.Vector3(...nephronFrame().v).multiplyScalar(-1.6e-3)), 'jg', 'is-pointer')}
     </group>
   );

@@ -48,7 +48,7 @@ Results recorded on 2026-10-20 on Windows 11, Node 22.14.0. Browser tests ran in
 | `npm run validate:assets` | **Pass**: 69 nodes, 224,315 triangles, sha256 `f6856c6b94bd…` |
 | Determinism | **Pass**: re-extraction gives the same unbaked model (`7833b5dc51ab…`) and re-baking the recorded final sha256 (`f6856c6b94bd…`) |
 | `npm run build` | **Pass**. Vite warns about chunk size |
-| `npm run e2e` | **Pass**: 23/23. The first full run passed 18 and failed 5. Four failures came from the structure list naming a part twice (inside its group and on its own) and one from a wrong expected stage in the test; after the fixes those five, and the three list-related tests, were run again and passed |
+| `npm run e2e` | **Pass**: 23/23 in one run (25 min), after the tour and blood-view fixes. (The first full run had passed 18: four failures came from the structure list naming a part twice and one from a wrong expected stage in the test.) |
 | Live site (2026-10-20) | **Pass**: https://kidney-anatomy-lab.vercel.app returns the page; `models/kidney.glb` is served with the recorded sha256 `f6856c6b94bd…`; every mode opens in Chrome 155 with no console errors, at 60–61 fps |
 | GPU check (Chrome 155, AMD Radeon, D3D11) | Every mode renders with no console errors. Ready in 11.3 s. Frame rates: 59–61 fps in every mode |
 
@@ -60,6 +60,9 @@ Results recorded on 2026-10-20 on Windows 11, Node 22.14.0. Browser tests ran in
 - **The first kidney fits collapsed** (free-scale ICP shrank the kidney to a tenth) and then turned a kidney upside down. The scale is now fixed by the kidneys' sizes and each principal axis keeps its sign.
 - **The body fit was 26–45 mm off.** This body has six lumbar vertebrae; ribs and diaphragm are now fitted on T11–L2 and the psoas on T12–L5 and the sacrum. The common iliac arteries still fitted 30 mm off and were dropped.
 - **The nephron view was muddy and slow (16 fps)**: the whole ghosted kidney filled the screen. It now draws its own wedge of cortex and medulla, shaded by the medulla's concentration (60 fps); its labels sit beside the tubes and under the page's panels.
+- **The tour's "Inside the kidney" and "Cortex and medulla" steps cut behind the kidneys** (a fixed position across the whole body), leaving only the spine. A tour step's frontal cut now runs through the middle of the kidneys, and a unit test checks it. The Cut control now shows the tour's cut (locked, "set by the tour") instead of "Off".
+- **The interlobar, arcuate and cortical radiate vessels were hidden under the cut face** in the blood view. They are drawn over it now, as in a textbook section.
+- **The urine and stone tour steps zoomed onto the ureter**, cutting off the kidneys and bladder. They frame the whole tract now; the filtering close-up's labels sit on the glomerulus and its arterioles.
 - **The structure list showed parts twice**, inside their group and on their own. A unit test now checks every mesh is listed once.
 
 ## Not verified

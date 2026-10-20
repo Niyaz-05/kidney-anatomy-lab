@@ -193,7 +193,11 @@ export function effectiveColourBy(def: SimulationDefinition, state: LabState): C
 export function effectiveSlice(def: SimulationDefinition, state: LabState): Slice {
   if (state.mode === 'tour') {
     const s = step(def, state);
-    if (s?.slice) return { axis: s.slice.axis, at: s.slice.at, flip: false };
+    if (s?.slice) {
+      const m = s.mode ?? 'explore';
+      const at = s.slice.at ?? (s.slice.axis === 'coronal' ? kidneyCut(def, m).at : 0);
+      return { axis: s.slice.axis, at, flip: false };
+    }
     return s?.mode && OPENED.includes(s.mode) ? kidneyCut(def, s.mode) : NO_SLICE;
   }
   return state.slice;
@@ -288,7 +292,7 @@ export function makeReducer(def: SimulationDefinition) {
           const first = def.tour[0];
           return {
             ...state, mode: 'tour', tourIndex: 0, selected: null, isolate: false, playing: true,
-            camera: cam(state, first?.camera ?? MODE_CAMERA[first?.mode ?? 'explore'], first?.focus ?? []),
+            camera: cam(state, first?.camera ?? MODE_CAMERA[first?.mode ?? 'explore'], first?.frame === 'mode' ? [] : first?.focus ?? []),
           };
         }
         // The blood, urine and stone views open both kidneys from the front.
@@ -334,7 +338,7 @@ export function makeReducer(def: SimulationDefinition) {
         const index = clamp(action.index, 0, def.tour.length - 1);
         const s = def.tour[index];
         if (!s) return state;
-        return { ...state, mode: 'tour', tourIndex: index, camera: cam(state, s.camera ?? MODE_CAMERA[s.mode ?? 'explore'], s.focus) };
+        return { ...state, mode: 'tour', tourIndex: index, camera: cam(state, s.camera ?? MODE_CAMERA[s.mode ?? 'explore'], s.frame === 'mode' ? [] : s.focus) };
       }
       case 'camera':
         if (!presets.has(action.preset)) return state;

@@ -188,6 +188,9 @@ describe('lab state', () => {
     s = reduce(s, { type: 'tour-go', index: def.tour.findIndex((t) => t.id === 'stone') });
     expect(effectiveStone(def, s)).toBe(7);
     expect(effectiveSlice(def, s).axis).toBe('coronal');
+    s = reduce(s, { type: 'tour-go', index: def.tour.findIndex((t) => t.id === 'inside') });
+    // The tour's frontal cut runs through the middle of the kidneys, so they show cut open.
+    expect(effectiveSlice(def, s)).toEqual(kidneyCut(def, 'explore'));
     s = reduce(s, { type: 'tour-go', index: 0 });
     expect(effectiveSlice(def, s).axis).toBe('off');
   });

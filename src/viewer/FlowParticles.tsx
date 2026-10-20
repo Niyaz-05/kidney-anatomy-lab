@@ -141,7 +141,10 @@ export function UrineFlow({ playing, reducedMotion, wavesPerMin, voiding }: { pl
   );
 }
 
-/** The small renal vessels (interlobar, arcuate, cortical radiate): drawn tubes, merged by kind. */
+/**
+ * The small renal vessels (interlobar, arcuate, cortical radiate): drawn tubes, merged by kind. They
+ * lie inside the kidney, so they are drawn over the cut face, like the vessels in a textbook section.
+ */
 export function RenalVessels() {
   const meshes = useMemo(() => (['artery', 'vein'] as const).map((kind) => {
     const parts = renalVessels.filter((v) => v.kind === kind).map((v) => {
@@ -150,11 +153,10 @@ export function RenalVessels() {
     });
     const g = mergeGeometries(parts, false)!;
     parts.forEach((x) => x.dispose());
-    const material = new THREE.MeshStandardMaterial({ color: kind === 'artery' ? '#c42a2e' : '#4a3a86', roughness: 0.35, metalness: 0, emissive: kind === 'artery' ? '#3a0606' : '#0c0a24' });
-    material.clippingPlanes = [clip.plane];
+    const material = new THREE.MeshStandardMaterial({ color: kind === 'artery' ? '#d0303a' : '#5a4aa0', roughness: 0.35, metalness: 0, emissive: kind === 'artery' ? '#4a0808' : '#14103a', depthTest: false, transparent: true, opacity: 0.9 });
     const m = new THREE.Mesh(g, material);
     m.raycast = () => {};
-    m.renderOrder = 3;
+    m.renderOrder = kind === 'artery' ? 5.5 : 5;
     return m;
   }), []);
   useEffect(() => () => meshes.forEach((m) => { m.geometry.dispose(); (m.material as THREE.Material).dispose(); }), [meshes]);

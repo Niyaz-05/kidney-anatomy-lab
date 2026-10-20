@@ -176,6 +176,7 @@ export function LabViewer({ insets = NO_INSETS }: { insets?: ViewInsets }) {
                 playing={state.playing}
                 reducedMotion={reducedMotion}
                 labels={state.labels}
+                closeUp={mode === 'filtering'}
                 pointOut={mode === 'nephron' && state.mode === 'hormones' ? hormoneById(hormone.id).steps[hormone.step]?.nephron ?? null : null}
               />
             )}
