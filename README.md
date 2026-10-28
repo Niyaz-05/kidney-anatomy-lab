@@ -2,6 +2,8 @@
 
 **Live:** https://kidney-anatomy-lab.vercel.app
 
+Works on phones and tablets: the details rise from the bottom in a sheet you can drag, fold or close with a swipe down, and picking a structure frames it above the sheet.
+
 A realistic, interactive 3D urinary system for secondary-school and first-year biology:
 
 - **Real look.** A shiny capsule over the red-brown kidney; cut open, a paler cortex, darker striped pyramids, and pale calyces and pelvis; pale ureters, a pink-tan bladder, yellow adrenal glands, red arteries, blue-purple veins, ivory bone. "Colour" switches to **Layers** to give each layer its own colour.
